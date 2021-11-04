@@ -7,13 +7,14 @@ class DishIngredients extends Component{
 
 
   render(){
-<div>
-  <h1>
-    רכיבי המנה
-  </h1>
-  <div>מרק ירקות בסגנון כפרי מוגש עם לחם הבית</div>
-  <img src={}></img>
-  </div>
+    return(
+      <div>
+        <h1>
+          רכיבי המנה
+        </h1>
+        <div>מרק ירקות בסגנון כפרי מוגש עם לחם הבית</div>
+        {/* <img src={}></img> */}
+      </div>)
   }
 }
 

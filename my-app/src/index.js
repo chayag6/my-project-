@@ -4,10 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css';
+// import { BrowserRouter } from "react-router-dom";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import FoodMenu from "./components/FoodMenu";
+import DishIngredients from "./components/dishIngredients";
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="FoodMenu" element={<FoodMenu />} />
+      <Route path="DishIngredients" element={<DishIngredients />} />
+    </Routes>
+
+
+      </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

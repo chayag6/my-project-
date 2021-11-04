@@ -8,11 +8,10 @@ class FoodMenu extends Component{
 
     selectedDish: null,
     food:[
-      {id:0, details:"מתוק",name:"מרק", price:70, picture:"מחמהחמכ"},
-      {id:1, details:"מלוח",name:"מבושל בשרי",  price:80, picture:"מחמהחמכ"},
-      {id:2, details:"חריף",name:"אורז",  price:90, picture:"מחמהחמכ"},
-      {id:3, details:"מתוק",name:"תפוח אדמה",  price:100, picture:"מחמהחמכ"},
-
+      {id:0, name:"מרק", price:70, picture:"מחמהחמכ"},
+      {id:1, name:"מבושל בשרי",  price:80, picture:"מחמהחמכ"},
+      {id:2,name:"אורז",  price:90, picture:"מחמהחמכ"},
+      {id:3, name:"תפוח אדמה",  price:100, picture:"מחמהחמכ"},
     ]
 }
 
