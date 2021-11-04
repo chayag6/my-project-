@@ -3,13 +3,13 @@ import Dish from './Dishe'
 
 class FoodMenu extends Component{
 
-  
+
   state = {
 
     selectedDish: null,
     food:[
-      {id:0, details:"מתוק",name:"תפוח אדמה", price:70, picture:"מחמהחמכ"},
-      {id:1, details:"מלוח",name:"שעועית",  price:80, picture:"מחמהחמכ"},
+      {id:0, details:"מתוק",name:"מרק", price:70, picture:"מחמהחמכ"},
+      {id:1, details:"מלוח",name:"מבושל בשרי",  price:80, picture:"מחמהחמכ"},
       {id:2, details:"חריף",name:"אורז",  price:90, picture:"מחמהחמכ"},
       {id:3, details:"מתוק",name:"תפוח אדמה",  price:100, picture:"מחמהחמכ"},
 
@@ -30,7 +30,7 @@ class FoodMenu extends Component{
 
         return(
           
-            <div className="food">
+            <div className="food2">
               {food}
             </div>
         );
