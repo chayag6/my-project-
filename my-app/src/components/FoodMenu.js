@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import Dish from './Dishe'
+import axios from '../axios'
 
 class FoodMenu extends Component{
 
@@ -14,6 +15,27 @@ class FoodMenu extends Component{
       {id:3, name:"תפוח אדמה",  price:100, picture:"מחמהחמכ"},
     ]
 }
+
+// constructor(props) {
+//   super(props);
+//   this.food.setState(data)
+// }
+
+
+componentDidMount() {
+  debugger;
+  // console.log(this.props.songs);
+  // if (this.props.songs == 0) {
+      axios.get('/dishes').then(x => {
+        console.log(x.data)
+        this.setState({food:x.data})
+          // this.props.onload(x.data)
+      }).catch(x => {
+        console.log(x)}
+
+  // }
+
+      )};
 
   selectedHandler = (id) => {
     this.setState({ selectedDish: id })

@@ -4,9 +4,11 @@ const menuDishes = require('../buisnesLayer/menuDishesBL');
 
 let router = express.Router();
 
-router.get('/getAll',function (req,res)
+router.route('/dishes')
+.get((req,res)=>
  {
-  menuDishes.getAll.then(result=>{
-    return res.json(result)
+  menuDishes.getAll().then(result=>{
+     res.json(result)
   })
 })
+module.exports = router;
